@@ -5,6 +5,7 @@ const app = express()
 
 app.use(cors())
 
+console.log('Holii')
 
 let notes = [
   {
