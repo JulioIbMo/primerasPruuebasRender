@@ -3,12 +3,12 @@ import './index.css'
 import axios from 'axios'
 import App from './App'
 
+const baseUrl = '/api/notes'
 
-
-const promise2 = axios.get('http://localhost:3001/foobar')
+const promise2 = axios.get(baseUrl)
 console.log(promise2)
 
-const promise = axios.get('http://localhost:3001/notes')
+const promise = axios.get(baseUrl)
 
 promise.then(response => {
   console.log(response)
